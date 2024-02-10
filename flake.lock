@@ -1,0 +1,42 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1707401858,
+        "narHash": "sha256-aDoW/6ST/C2q7auOChns0tMEtRoGYdRMbFOqNGcZ4jQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "620b309240d774a0ea00611d8291f96141c1e60e",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "release-23.11",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1707092692,
+        "narHash": "sha256-ZbHsm+mGk/izkWtT4xwwqz38fdlwu7nUUKXTOmm4SyE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "faf912b086576fd1a15fca610166c98d47bc667e",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-unstable",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-unstable": "nixpkgs-unstable"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
