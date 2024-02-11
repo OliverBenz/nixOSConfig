@@ -25,8 +25,8 @@
           inherit system;
           specialArgs = { inherit pkgs-unstable; };
           modules = [ 
-            ./configuration.nix 
             ./system
+            ./configuration.nix
           ];
         };
       };
