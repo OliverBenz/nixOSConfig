@@ -94,6 +94,7 @@
 
       # Work
       pkgs.slack
+      pkgs.whatsapp-for-linux
       pkgs.bitwarden
       pkgs-unstable.mathematica
       pkgs.libreoffice
