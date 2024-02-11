@@ -20,14 +20,25 @@
       };
     in {
       nixosConfigurations = {
+
         oliverLpt = lib.nixosSystem {
           inherit system;
           specialArgs = { inherit pkgs-unstable; };
           modules = [
-            ./hardware-configuration.nix
+            ./hosts/laptop
             ./system
           ];
         };
+
+        oliverPC = lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit pkgs-unstable; };
+          modules = [
+            ./hosts/pcIbk
+            ./system
+          ];
+        };
+
       };
     };
 }
