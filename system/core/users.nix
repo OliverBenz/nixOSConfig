@@ -35,12 +35,11 @@
         pkgs.jetbrains.clion
         pkgs.vscode
         pkgs.gcc13
-        pkgs.sqlitecpp
         pkgs.cmake
         pkgs.gnumake
         pkgs.ninja
-        pkgs.sqlite
         pkgs.qt6.full
+        pkgs.sqlite
       ];
     };
 

@@ -34,7 +34,7 @@
           inherit system;
           specialArgs = { inherit pkgs-unstable; };
           modules = [
-            ./hosts/pcIbk
+            ./hosts/computerIbk
             ./system
           ];
         };
