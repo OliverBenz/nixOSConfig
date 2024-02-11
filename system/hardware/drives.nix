@@ -1,4 +1,3 @@
-{ config, lib, ... }:
 {
   fileSystems."/home/oliver/Data" =
   {

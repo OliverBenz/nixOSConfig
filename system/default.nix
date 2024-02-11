@@ -1,6 +1,7 @@
 {
   imports = [
     ./core
+    ./hardware
     ./software
   ];
 }

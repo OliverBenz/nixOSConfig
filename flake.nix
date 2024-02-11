@@ -23,9 +23,9 @@
         oliverLpt = lib.nixosSystem {
           inherit system;
           specialArgs = { inherit pkgs-unstable; };
-          modules = [ 
+          modules = [
+            ./hardware-configuration.nix
             ./system
-            ./configuration.nix
           ];
         };
       };

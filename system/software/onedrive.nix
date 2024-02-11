@@ -1,4 +1,4 @@
-{ pkgs, config, pkgs-unstable, ... }: {
+{ pkgs-unstable, ... }: {
   services.onedrive.enable = true;
   services.onedrive.package = pkgs-unstable.onedrive;
 }
