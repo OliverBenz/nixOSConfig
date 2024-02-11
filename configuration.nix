@@ -145,6 +145,7 @@
     gparted
     unzip
     powertop
+    libsForQt5.kcalc
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -159,8 +160,11 @@
 
   # List services that you want to enable:
 
+  # Enable SSH agent
+  programs.ssh.startAgent = true;
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
