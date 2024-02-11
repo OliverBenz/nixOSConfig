@@ -8,5 +8,6 @@
     ./printer.nix
     ./bluetooth.nix
     ./fingerprint.nix
+    ./users.nix
   ];
 }
