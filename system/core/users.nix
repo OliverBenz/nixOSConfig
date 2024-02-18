@@ -32,6 +32,7 @@
         pkgs.discord
         pkgs.obs-studio
         pkgs.spotify
+        pkgs.stellarium
 
         # Development
         pkgs.jetbrains.clion
@@ -42,6 +43,8 @@
         pkgs.ninja
         pkgs.qt6.full
         pkgs.sqlite
+        pkgs.gtest
+        pkgs.tcl
       ];
     };
 
