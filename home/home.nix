@@ -60,20 +60,20 @@
     # '';
   };
 
-  packageOverrides = pkgs: with pkgs; {
-	  name = "vim-with-plugins";
+  # packageOverrides = pkgs: with pkgs; {
+	#   name = "vim-with-plugins";
 
-    vim_configurable.customize = {
+  #   vim_configurable.customize = {
 
-      vimrcConfig.plug.plugins = with pkgs.vimPlugins; [
-        vim-solarized8
-        nerdtree
-        vim-polyglot
-        auto-pairs
-        # vim-fswitch
-      ];
-    };
-  };
+  #     vimrcConfig.plug.plugins = with pkgs.vimPlugins; [
+  #       vim-solarized8
+  #       nerdtree
+  #       vim-polyglot
+  #       auto-pairs
+  #       # vim-fswitch
+  #     ];
+  #   };
+  # };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
