@@ -8,7 +8,9 @@
       extraGroups = [ "networkmanager" "wheel" ];
       packages = [
         # Essential
+        pkgs.home-manager
         pkgs.brave
+        pkgs.firefox
         pkgs.kate
         pkgs.mpv
         pkgs.gthumb
@@ -20,7 +22,7 @@
         pkgs.slack
         pkgs.whatsapp-for-linux
         pkgs.bitwarden
-        pkgs-unstable.mathematica
+        # pkgs-unstable.mathematica
         pkgs.libreoffice
         pkgs.thunderbird
         pkgs.calibre
