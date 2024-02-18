@@ -43,9 +43,16 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    ".vim/autoload/plug.vim".source = dotfiles/plug.vim  # Vim Plugin Manager
-    ".vimrc".source = dotfiles/vimrc;                    # Vim Configuration File
 
+    # Vim
+    ".vim/autoload/plug.vim".source = dotfiles/plug.vim;
+    ".vimrc".source = dotfiles/vimrc;
+
+    # Onedrive
+    ".config/onedriveUni/config".source = dotfiles/onedriveUni;
+    ".config/onedrivePersonal/config".source = dotfiles/onedrivePersonal;
+    ".config/onedrive-launcher".source = dotfiles/onedrive-launcher;
+  
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
