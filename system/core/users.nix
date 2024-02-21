@@ -58,4 +58,11 @@
     };
     
   };
+
+  environment.variables = {
+    EDITOR = "vim";
+    SQLITE3_OUT = "${pkgs.sqlite.out}"; # Library files
+    SQLITE3_DEV = "${pkgs.sqlite.dev}"; # Header files
+    SQLITE3_BIN = "${pkgs.sqlite.bin}"; # Binanry files
+  };
 }
