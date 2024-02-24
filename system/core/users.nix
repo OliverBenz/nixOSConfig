@@ -37,11 +37,14 @@
         # Development
         pkgs.jetbrains.clion
         pkgs.vscode
+        pkgs.zeal-qt6
         pkgs.gcc13
         pkgs.cmake
         pkgs.gnumake
         pkgs.ninja
         pkgs.qt6.full
+        pkgs.qt6.qtbase
+        pkgs.qtcreator
         pkgs.sqlite
         pkgs.gtest
         pkgs.tcl
@@ -61,8 +64,9 @@
 
   environment.variables = {
     EDITOR = "vim";
-    SQLITE3_OUT = "${pkgs.sqlite.out}"; # Library files
-    SQLITE3_DEV = "${pkgs.sqlite.dev}"; # Header files
-    SQLITE3_BIN = "${pkgs.sqlite.bin}"; # Binanry files
+    SQLite3_Library = "${pkgs.sqlite.out}"; # Library files
+    SQLite3_Include = "${pkgs.sqlite.dev}"; # Header files
+    SQLITE3_Binary = "${pkgs.sqlite.bin}";  # Binary files
+    SQLite3_Root = "${pkgs.sqlite.bin}:${pkgs.sqlite.dev}:${pkgs.sqlite.out}";
   };
 }
